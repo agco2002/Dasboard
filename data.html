@@ -8,7 +8,7 @@
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="/fontawesome-free-6.4.2-web/css/all.css">
   <!-- DataTables -->
   <link rel="stylesheet" href="css/dataTables.bootstrap4.min.css">
   <link rel="stylesheet" href="css/responsive.bootstrap4.min.css">
@@ -20,60 +20,58 @@
   <div class="wrapper">
 
     <!-- Preloader -->
-    <div class="preloader flex-column justify-content-center align-items-center">
-      <img class="animation__shake" src="img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
-    </div>
+   
   
     <!-- Navbar -->
     <nav class="main-header navbar navbar-expand navbar-white navbar-light">
      
-  
-      <!-- Right navbar links -->
-      <ul class="navbar-nav ml-auto">
-        <!-- Navbar Search -->
-        <li class="nav-item">
-          <a class="nav-link" data-widget="navbar-search" href="#" role="button">
-            <i class="fas fa-search"></i>
-          </a>
-          <div class="navbar-search-block">
-            <form class="form-inline">
-              <div class="input-group input-group-sm">
-                <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
-                <div class="input-group-append">
-                  <button class="btn btn-navbar" type="submit">
-                    <i class="fas fa-search"></i>
-                  </button>
-                  <button class="btn btn-navbar" type="button" data-widget="navbar-search">
-                    <i class="fas fa-times"></i>
-                  </button>
-                </div>
+   <ul class="navbar-nav ml-auto">
+      <!-- Navbar Search -->
+      <li class="nav-item">
+        <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+          <i class="fas fa-search"></i>
+        </a>
+        <div class="navbar-search-block">
+          <form class="form-inline">
+            <div class="input-group input-group-sm">
+              <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+              <div class="input-group-append">
+                <button class="btn btn-navbar" type="submit">
+                  <i class="fas fa-search"></i>
+                </button>
+                <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                  <i class="fas fa-times"></i>
+                </button>
               </div>
-            </form>
-          </div>
-        </li>
-  
-       
-              
-        <!-- Notifications Dropdown Menu -->
-        <li class="nav-item dropdown">
-          <a class="nav-link" data-toggle="dropdown" href="#">
-            <i class="far fa-bell"></i>
+            </div>
+          </form>
+        </div>
+      </li>
+
+      <!-- Messages Dropdown Menu -->
+     
+            
+      <!-- Notifications Dropdown Menu -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="fa-solid fa-eye"></i>
           
-          </a>
-          <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-          
-            <div class="dropdown-divider"></div>
-            <a href="#" class="dropdown-item">
-              <i class="fas fa-envelope mr-2"></i> PERFIL
-           
-            </a>
-           
-            <div class="dropdown-divider"></div>
-            <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
-          </div>
-        </li>
+        </a>
         
-      </ul>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          
+          
+          <a href="#" class="dropdown-item">
+            <i class="fa-solid fa-user"></i> Perfil
+          </a>
+          
+          <a href="#" class="dropdown-item dropdown-footer">Salir</a>
+        </div>
+      </li>
+      
+    </ul>
+      <!-- Right navbar links -->
+      
     </nav>
     <!-- /.navbar -->
   
@@ -166,13 +164,74 @@
     <section class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">
-          <div class="col-sm-6">
+          <div class="col-sm-10">
             <h1>Usuarios </h1>
           </div>
           <div class="col">
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-primary">
-              Launch Primary Modal
+              Registrar Usuarios
             </button>
+            <div class="modal fade" id="modal-primary">
+              <div class="modal-dialog">
+                
+
+                <section class="content">
+                  <div class="container-fluid">
+                    <div class="row">
+                      <!-- left column -->
+                      <div class="col-md-12">
+                        <!-- jquery validation -->
+                        <div class="card card-primary">
+                          <div class="card-header">
+                            <h3 class="card-title">Registro de Usuarios</h3>
+                          </div>
+                          <!-- /.card-header -->
+                          <!-- form start -->
+                          <form id="quickForm">
+                            <div class="card-body">
+                              <div class="form-group">
+                                <label for="exampleInputEmail1">Nombres</label>
+                                <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                              </div>
+                              <div class="form-group">
+                                <label for="exampleInputEmail1">Apellidos</label>
+                                <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                              </div>
+                              <div class="form-group">
+                                <label for="exampleInputEmail1">Email</label>
+                                <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                              </div>
+                              <div class="form-group">
+                                <label for="exampleInputPassword1">Telefono</label>
+                                <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                              </div>
+                              <div class="form-group mb-0">
+                                
+                              </div>
+                            </div>
+                            <!-- /.card-body -->
+                            <div class="card-footer">
+                              <button type="submit" class="btn btn-primary">Enviar</button>
+                            </div>
+                          </form>
+                        </div>
+                        <!-- /.card -->
+                        </div>
+                      <!--/.col (left) -->
+                      <!-- right column -->
+                      <div class="col-md-6">
+            
+                      </div>
+                      <!--/.col (right) -->
+                    </div>
+                    <!-- /.row -->
+                  </div><!-- /.container-fluid -->
+                </section>
+                <!-- /.modal-content -->
+              </div>
+              <!-- /.modal-dialog -->
+            </div>
+            <!-- /.modal -->
           </div>
           
         </div>
@@ -215,35 +274,104 @@
                     <td>Calderon Osorio</td>
                     <td>agco7331@gmail.com</td>
                     <td>3144663033</td>
-                    <td>A</td>
+                      <td>
+                        <div class="row">
+                         <div class="col-sm-6">
+                          <!-- select -->
+                          <div class="form-group">
+                            <select class="form-control">
+                              <option>Acciones</option>
+                              <option>Editar</option>
+                              <option>Deshabilitar</option>
+                              <option>Eliminar</option>
+                             
+                            </select>
+                          </div>
+                        </div>
+                      </td>
                   </tr>
                   <tr>
                     <td>Andres Gilberto</td>
                     <td>Calderon Osorio</td>
                     <td>agco7331@gmail.com</td>
                     <td>3144663033</td>
-                    <td>A</td>
+                    <td>
+                      <div class="row">
+                        <div class="col-sm-6">
+                         <!-- select -->
+                         <div class="form-group">
+                           <select class="form-control">
+                             <option>Acciones</option>
+                             <option>Editar</option>
+                             <option>Deshabilitar</option>
+                             <option>Eliminar</option>
+                            
+                           </select>
+                         </div>
+                       </div>
+                    </td>
                   </tr>
                   <tr>
                     <td>Andres Gilberto</td>
                     <td>Calderon Osorio</td>
                     <td>agco7331@gmail.com</td>
                     <td>3144663033</td>
-                    <td>A</td>
+                    <td>
+                      <div class="row">
+                        <div class="col-sm-6">
+                         <!-- select -->
+                         <div class="form-group">
+                           <select class="form-control">
+                             <option>Acciones</option>
+                             <option>Editar</option>
+                             <option>Deshabilitar</option>
+                             <option>Eliminar</option>
+                            
+                           </select>
+                         </div>
+                       </div>
+                    </td>
                   </tr>
                   <tr>
                     <td>Andres Gilberto</td>
                     <td>Calderon Osorio</td>
                     <td>agco7331@gmail.com</td>
                     <td>3144663033</td>
-                    <td>A</td>
+                    <td>
+                      <div class="row">
+                        <div class="col-sm-6">
+                         <!-- select -->
+                         <div class="form-group">
+                           <select class="form-control">
+                             <option>Acciones</option>
+                             <option>Editar</option>
+                             <option>Deshabilitar</option>
+                             <option>Eliminar</option>
+                            
+                           </select>
+                         </div>
+                       </div>
+                    </td>
                   </tr>
                   <tr>
                     <td>Andres Gilberto</td>
                     <td>Calderon Osorio</td>
                     <td>agco7331@gmail.com</td>
                     <td>3144663033</td>
-                    <td>A</td>
+                    <td> <div class="row">
+                      <div class="col-sm-6">
+                       <!-- select -->
+                       <div class="form-group">
+                         <select class="form-control">
+                           <option>Acciones</option>
+                           <option>Editar</option>
+                           <option>Deshabilitar</option>
+                           <option>Eliminar</option>
+                          
+                         </select>
+                       </div>
+                     </div>
+                    </td>
                   </tr>
                   
                 </table>
@@ -301,11 +429,7 @@
 
 
 
-<!-- SweetAlert2 -->
-<script src="../../plugins/sweetalert2/sweetalert2.min.js"></script>
-<!-- Toastr -->
-<script src="../../plugins/toastr/toastr.min.js"></script>
-<!-- AdminLTE App -->
+
 
 <script>
 
