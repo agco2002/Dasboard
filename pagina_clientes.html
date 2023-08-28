@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AdminLTE 3 | DataTables</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.css">
+  <!-- DataTables -->
+  <link rel="stylesheet" href="AdminLTE-3.2.0/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="AdminLTE-3.2.0/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+  <link rel="stylesheet" href="AdminLTE-3.2.0/datatables-buttons/css/buttons.bootstrap4.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="AdminLTE-3.2.0/dist/css/adminlte.min.css">
+</head>
+<body class="hold-transition sidebar-mini layout-fixed">
+<div class="wrapper">
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      
+    </ul>
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      <!-- Navbar Search -->
+      <li class="nav-item">
+        <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+          <i class="fas fa-search"></i>
+        </a>
+        <div class="navbar-search-block">
+          <form class="form-inline">
+            <div class="input-group input-group-sm">
+              <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+              <div class="input-group-append">
+                <button class="btn btn-navbar" type="submit">
+                  <i class="fas fa-search"></i>
+                </button>
+                <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </li>
+
+       <!-- Messages Dropdown Menu -->
+       <li class="nav-item dropdown user-menu">
+        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+          <i class="fa-solid fa-user"></i>
+      
+        </a>
+        <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <!-- User image -->
+          <li class="user-header bg-primary">
+            <i class="fa-regular fa-user"></i>
+
+            <p>
+              Andres Calderon - Web Developer
+        
+            </p>
+          </li>
+          <!-- Menu Body -->
+          <li class="user-body">
+            <div class="row">
+              <div class="col-4 text-center">
+                <a href="#">Seguidores</a>
+              </div>
+              <div class="col-4 text-center">
+                <a href="#">Ventas</a>
+              </div>
+              <div class="col-4 text-center">
+                <a href="#">Amigos</a>
+              </div>
+            </div>
+            <!-- /.row -->
+          </li>
+          <!-- Menu Footer-->
+          <li class="user-footer">
+            <a href="#" class="btn btn-default btn-flat">Perfil</a>
+            <a href="#" class="btn btn-default btn-flat float-right">Desconectar</a>
+          </li>
+        </ul>
+      </li>
+      <!-- Notifications Dropdown Menu -->
+      
+
+      
+      <li class="nav-item">
+        <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+          <i class="fas fa-expand-arrows-alt"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
+          <i class="fas fa-th-large"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <!-- Brand Logo -->
+    <a href="#" class="brand-link">
+      <img src="img/logo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3 " >
+      <span class="brand-text font-weight-light"></span>
+    </a>
+    <br>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user panel (optional) -->
+      
+
+      <!-- SidebarSearch Form -->
+      <div class="form-inline">
+        <div class="input-group" data-widget="sidebar-search">
+          <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+          <div class="input-group-append">
+            <button class="btn btn-sidebar">
+              <i class="fas fa-search fa-fw"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <br>
+
+
+    
+
+  
+      
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item menu-open">
+            <a href="pagina_inicio.html" class="nav-link active">
+              <i class="fa-solid fa-house"></i>
+              <p>
+                Inicio
+                
+                
+              </p>
+            </a>
+           
+          </li>
+          
+        </ul>
+      </nav>
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item menu-open">
+            <a href="pagina_clientes.html" class="nav-link active">
+              <i class="fa-solid fa-users"></i>
+              <p>
+                Usuarios
+                
+                
+              </p>
+            </a>
+           
+          </li>
+           
+        </ul>
+      </nav>
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item menu-open">
+            <a href="pagina_informes.html" class="nav-link active">
+              <i class="fa-solid fa-clipboard"></i>
+              <p>
+                Informes
+                
+                
+              </p>
+            </a>
+           
+          </li>
+          
+        </ul>
+      </nav>
+    </div>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-9">
+            <h1>Usuarios</h1>
+          </div>
+          <div class="col">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-primary">
+              Registro Usuarios
+            </button>
+            <div class="modal fade" id="modal-primary">
+              <div class="modal-dialog">
+                <div class="modal-content bg-primary">
+                  <br>
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <!-- left column -->
+          <div class="col-md-12">
+            <!-- jquery validation -->
+            <div class="card card-primary">
+              <div class="card-header" style="background-color: white; color: black;">
+                <h3 class="card-title">Registro de Usuarios</h3>
+              </div>
+              <!-- /.card-header -->
+              <!-- form start -->
+              <form id="quickForm">
+                <div class="card-body">
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Nombres</label>
+                    <input type="text" name="nombres" class="form-control" id="exampleInputEmail1" placeholder="Escribir Nombres">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Apellidos</label>
+                    <input type="text" name="apellidos" class="form-control" id="exampleInputEmail1" placeholder="Escribir Apellidos">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Email</label>
+                    <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Escribir Email">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Celular</label>
+                    <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Escribir Celular">
+                  </div>
+                
+                  
+                </div>
+                <!-- /.card-body -->
+                <div class="card-footer">
+                  <button type="submit" class="btn btn-primary">Registrar</button>
+                </div>
+              </form>
+            </div>
+            <!-- /.card -->
+            </div>
+          <!--/.col (left) -->
+          <!-- right column -->
+          <div class="col-md-6">
+
+          </div>
+          <!--/.col (right) -->
+        </div>
+        <!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+                </div>
+                <!-- /.modal-content -->
+              </div>
+              <!-- /.modal-dialog -->
+            </div>
+            <!-- /.modal -->
+            
+    </section>
+    
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="card">
+              
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Usuarios Registrados</h3>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+                <table id="example1" class="table table-bordered table-striped">
+                  <thead>
+                  <tr>
+                    <th>Nombres</th>
+                    <th>Apellidos</th>
+                    <th>Email</th>
+                    <th>Telefono</th>
+                    <th>Acciones</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td>Andres Giberto</td>
+                    <td>Calderon Osorio</td>
+                    <td>agco7331@gmail.com</td>
+                    <td>3144663033</td>
+                    <td>
+                      <div class="input-group input-group-lg mb-3">
+                        <div class="input-group-prepend">
+                          <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" style="background-color: rgb(0, 149, 255); height: 45px; font-size: 15px;">
+                            Acciones
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li class="dropdown-item"><a href="#">Editar</a></li>
+                            <li class="dropdown-item"><a href="#">Deshabilitar</a></li>
+                            <li class="dropdown-item"><a href="#">Eliminar</a></li>
+                          </ul>
+                        </div>
+                        <!-- /btn-group -->
+                      </div>
+                      <!-- /input-group -->
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Andres Giberto</td>
+                    <td>Calderon Osorio</td>
+                    <td>agco7331@gmail.com</td>
+                    <td>3144663033</td>
+                    <td>
+                      <div class="input-group input-group-lg mb-3">
+                        <div class="input-group-prepend">
+                          <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" style="background-color: rgb(0, 149, 255); height: 45px; font-size: 15px;">
+                            Acciones
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li class="dropdown-item"><a href="#">Editar</a></li>
+                            <li class="dropdown-item"><a href="#">Deshabilitar</a></li>
+                            <li class="dropdown-item"><a href="#">Eliminar</a></li>
+                          </ul>
+                        </div>
+                        <!-- /btn-group -->
+                      </div>
+                      <!-- /input-group -->
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <td>Andres Giberto</td>
+                    <td>Calderon Osorio</td>
+                    <td>agco7331@gmail.com</td>
+                    <td>3144663033</td>
+                    <td>
+                      <div class="input-group input-group-lg mb-3">
+                        <div class="input-group-prepend">
+                          <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" style="background-color: rgb(0, 149, 255); height: 45px; font-size: 15px;">
+                            Acciones
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li class="dropdown-item"><a href="#">Editar</a></li>
+                            <li class="dropdown-item"><a href="#">Deshabilitar</a></li>
+                            <li class="dropdown-item"><a href="#">Eliminar</a></li>
+                          </ul>
+                        </div>
+                        <!-- /btn-group -->
+                      </div>
+                      <!-- /input-group -->
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <td>Andres Giberto</td>
+                    <td>Calderon Osorio</td>
+                    <td>agco7331@gmail.com</td>
+                    <td>3144663033</td>
+                    <td>
+                      <div class="input-group input-group-lg mb-3">
+                        <div class="input-group-prepend">
+                          <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" style="background-color: rgb(0, 149, 255); height: 45px; font-size: 15px;">
+                            Acciones
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li class="dropdown-item"><a href="#">Editar</a></li>
+                            <li class="dropdown-item"><a href="#">Deshabilitar</a></li>
+                            <li class="dropdown-item"><a href="#">Eliminar</a></li>
+                          </ul>
+                        </div>
+                        <!-- /btn-group -->
+                      </div>
+                      <!-- /input-group -->
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <td>Andres Giberto</td>
+                    <td>Calderon Osorio</td>
+                    <td>agco7331@gmail.com</td>
+                    <td>3144663033</td>
+                    <td>
+                      <div class="input-group input-group-lg mb-3">
+                        <div class="input-group-prepend">
+                          <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" style="background-color: rgb(0, 149, 255); height: 45px; font-size: 15px;">
+                            Acciones
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li class="dropdown-item"><a href="#">Editar</a></li>
+                            <li class="dropdown-item"><a href="#">Deshabilitar</a></li>
+                            <li class="dropdown-item"><a href="#">Eliminar</a></li>
+                          </ul>
+                        </div>
+                        <!-- /btn-group -->
+                      </div>
+                      <!-- /input-group -->
+                    </td>
+                  </tr>
+                  
+                    <th>Nombres</th>
+                    <th>Apellidos</th>
+                    <th>Email</th>
+                    <th>Telefono</th>
+                    <th>Acciones</th>
+                  </tr>
+                  </tfoot>
+                </table>
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <div class="float-right d-none d-sm-block">
+      <b>Version</b> 3.2.0
+    </div>
+    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="AdminLTE-3.2.0/plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="AdminLTE-3.2.0/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- DataTables  & Plugins -->
+<script src="AdminLTE-3.2.0/plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="AdminLTE-3.2.0/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="AdminLTE-3.2.0/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+<script src="AdminLTE-3.2.0/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+<script src="AdminLTE-3.2.0/plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+<script src="AdminLTE-3.2.0/plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+<script src="AdminLTE-3.2.0/plugins/jszip/jszip.min.js"></script>
+<script src="AdminLTE-3.2.0/plugins/pdfmake/pdfmake.min.js"></script>
+<script src="AdminLTE-3.2.0/plugins/pdfmake/vfs_fonts.js"></script>
+<script src="AdminLTE-3.2.0/plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+<script src="AdminLTE-3.2.0/plugins/datatables-buttons/js/buttons.print.min.js"></script>
+<script src="AdminLTE-3.2.0/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+<!-- AdminLTE App -->
+<script src="AdminLTE-3.2.0/dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="AdminLTE-3.2.0/dist/js/demo.js"></script>
+<!-- Page specific script -->
+<script>
+  $(function () {
+    $("#example1").DataTable({
+      "responsive": true, "lengthChange": false, "autoWidth": false,
+      "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+    }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+    $('#example2').DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": false,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false,
+      "responsive": true,
+    });
+  });
+</script>
+</body>
+</html>
